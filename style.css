@@ -1,0 +1,24 @@
+
+#pop-up-modal {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  margin-left: -40%;
+  width: 80%;
+  max-height: 707px;
+  overflow: scroll;
+  background-color: #ccc;
+  z-index: 1;
+  display: none;
+}
+
+#pop-up-modal img {
+  width: 100%;
+}
+
+#pop-up-modal #iknow {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  width: 240px;
+}

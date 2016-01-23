@@ -13,8 +13,19 @@ function MM_swapImgRestore() { //v3.0
 
 //-->
 </script>
+
+<link rel="stylesheet" href="style.css">
+
 </HEAD>
 <BODY LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 onLoad="MM_preloadImages('images/index_04.gif')">
+
+<div id="pop-up-modal">
+  <img src="images/camper.jpg" alt="露營車在綠光森林">
+  <a id="iknow" href="">
+    <img src="images/iknow.jpg" alt="我知道了">
+  </a>
+</div>
+
 <TABLE WIDTH=759 BORDER=0 align="center" CELLPADDING=0 CELLSPACING=0>
   <TR align="left" valign="top"> 
     <TD COLSPAN=4>
@@ -51,6 +62,21 @@ function MM_swapImgRestore() { //v3.0
     <TD height="25" COLSPAN=4>　</TD>
   </TR>
 </TABLE>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    var modal = $('#pop-up-modal');
+    var btn = $('#iknow');
+    setTimeout(function() {
+      modal.fadeIn();
+    }, 0);
+    btn.on('click', function(e) {
+      e.preventDefault();
+      modal.fadeOut();
+    })
+  });
+</script>
 </BODY>
 
 <!-- Mirrored from www.furano.com.tw/ by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 15 Mar 2011 09:39:38 GMT -->
