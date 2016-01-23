@@ -1,12 +1,10 @@
 
 #pop-up-modal {
-  position: fixed;
+  position: absolute;
   top: 50px;
   left: 50%;
-  margin-left: -40%;
-  width: 80%;
-  max-height: 707px;
-  overflow: scroll;
+  margin-left: -400px;
+  width: 800px;
   background-color: #ccc;
   z-index: 1;
   display: none;
