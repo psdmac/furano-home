@@ -24,3 +24,22 @@
 .shake-rotate.shake-constant {
     animation: shake-rotate 5s ease-in-out infinite;
 }
+
+.camper-wrapper h3, .camper-wrapper h2 {
+  display: inline-block;
+}
+
+.camper-wrapper h2 {
+  margin-left: 20px;
+  margin-right: 10px;
+  color: rgb(0, 128, 0);
+}
+
+.img-wrapper {
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.img-wrapper img {
+  width: 100%;
+}
