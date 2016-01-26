@@ -20,3 +20,7 @@
   right: 50px;
   width: 240px;
 }
+
+.shake-rotate.shake-constant {
+    animation: shake-rotate 5s ease-in-out infinite;
+}
