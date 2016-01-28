@@ -29,6 +29,10 @@
   display: inline-block;
 }
 
+.camper-wrapper h3 {
+  color: #333;
+}
+
 .camper-wrapper h2 {
   margin-left: 20px;
   margin-right: 10px;
