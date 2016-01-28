@@ -64,6 +64,8 @@ function FP_getObjectByID(id,o) {//v1.0
 <link href="images/menu01.css" rel="stylesheet" type="text/css">
 <link href="images/menu03.css" rel="stylesheet" type="text/css">
 <link href="images/room01.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="dist/photoswipe.css">
+<link rel="stylesheet" href="dist/default-skin/default-skin.css">
 <link rel="stylesheet" href="icomoon/style.css">
 <link rel="stylesheet" href="style.css">
 <style>
@@ -354,25 +356,25 @@ table.MSONORMALTABLE
                   <div class="intro-wrapper" id="smart-series">
                     <h2>智能系列介紹</h2>
                     <div class="intro-img-wrapper">
-                      <div class="intro-img" style="background: url('images/smart/smart01.jpg'); background-size: cover; background-position: 50% 50%">
+                      <div class="intro-img" style="background: url('images/smart/smart01.jpg'); background-size: cover; background-position: 50% 50%" data-idx="1">
                         <span class="info">客廳</span>
                         <div class="mask">
                           <i class="icon-search-plus"></i>
                         </div>
                       </div>
-                      <div class="intro-img" style="background: url('images/smart/smart02.jpg'); background-size: cover; background-position: 50% 50%">
+                      <div class="intro-img" style="background: url('images/smart/smart02.jpg'); background-size: cover; background-position: 50% 50%" data-idx="2">
                         <span class="info">廁所衛浴</span>
                         <div class="mask">
                           <i class="icon-search-plus"></i>
                         </div>
                       </div>
-                      <div class="intro-img" style="background: url('images/smart/smart03.jpg'); background-size: cover; background-position: 50% 50%">
+                      <div class="intro-img" style="background: url('images/smart/smart03.jpg'); background-size: cover; background-position: 50% 50%" data-idx="3">
                         <span class="info">雙人床</span>
                         <div class="mask">
                           <i class="icon-search-plus"></i>
                         </div>
                       </div>
-                      <div class="intro-img" style="background: url('images/smart/smart04.jpg'); background-size: cover; background-position: 50% 50%">
+                      <div class="intro-img" style="background: url('images/smart/smart04.jpg'); background-size: cover; background-position: 50% 50%" data-idx="4">
                         <span class="info">可變床組</span>
                         <div class="mask">
                           <i class="icon-search-plus"></i>
@@ -383,25 +385,25 @@ table.MSONORMALTABLE
                   <div class="intro-wrapper" id="holiday-series">
                     <h2>享樂系列介紹</h2>
                     <div class="intro-img-wrapper">
-                      <div class="intro-img" style="background: url('images/holiday/holiday01.jpg'); background-size: cover; background-position: 50% 50%">
+                      <div class="intro-img" style="background: url('images/holiday/holiday01.jpg'); background-size: cover; background-position: 50% 50%" data-idx="5">
                         <span class="info">客廳</span>
                         <div class="mask">
                           <i class="icon-search-plus"></i>
                         </div>
                       </div>
-                      <div class="intro-img" style="background: url('images/holiday/holiday02.jpg'); background-size: cover; background-position: 50% 50%">
+                      <div class="intro-img" style="background: url('images/holiday/holiday02.jpg'); background-size: cover; background-position: 50% 50%" data-idx="6">
                         <span class="info">廁所衛浴</span>
                         <div class="mask">
                           <i class="icon-search-plus"></i>
                         </div>
                       </div>
-                      <div class="intro-img" style="background: url('images/holiday/holiday03.jpg'); background-size: cover; background-position: 50% 50%">
+                      <div class="intro-img" style="background: url('images/holiday/holiday03.jpg'); background-size: cover; background-position: 50% 50%" data-idx="7">
                         <span class="info">視聽設備</span>
                         <div class="mask">
                           <i class="icon-search-plus"></i>
                         </div>
                       </div>
-                      <div class="intro-img" style="background: url('images/holiday/holiday04.jpg'); background-size: cover; background-position: 50% 50%">
+                      <div class="intro-img" style="background: url('images/holiday/holiday04.jpg'); background-size: cover; background-position: 50% 50%" data-idx="8">
                         <span class="info">雙人床</span>
                         <div class="mask">
                           <i class="icon-search-plus"></i>
@@ -428,6 +430,151 @@ table.MSONORMALTABLE
   </TR>
 </TABLE>
 <p class="about01">　</p>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="dist/photoswipe.min.js"></script>
+  <script src="dist/photoswipe-ui-default.min.js"></script>
+
+  <script>
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items = [
+      {
+        src: 'images/smart/smart01.jpg',
+        w: 1000,
+        h: 667
+      },
+      {
+        src: 'images/smart/smart02.jpg',
+        w: 1000,
+        h: 1500
+      },
+      {
+        src: 'images/smart/smart03.jpg',
+        w: 1000,
+        h: 667
+      },
+      {
+        src: 'images/smart/smart04.jpg',
+        w: 1000,
+        h: 667
+      },
+      {
+        src: 'images/holiday/holiday01.jpg',
+        w: 1000,
+        h: 667
+      },
+      {
+        src: 'images/holiday/holiday02.jpg',
+        w: 1000,
+        h: 1500
+      },
+      {
+        src: 'images/holiday/holiday03.jpg',
+        w: 1000,
+        h: 667
+      },
+      {
+        src: 'images/holiday/holiday04.jpg',
+        w: 1000,
+        h: 667
+      }
+    ];
+
+
+
+    // Initializes and opens PhotoSwipe
+
+    $(document).ready(function() {
+      $('.intro-img').on('click', function() {
+        console.log('click');
+        var index = $(this).data('idx');
+        console.log(index);
+        clickPhoto(index-1);
+      });
+      var clickPhoto = function(idx) {
+            // define options (if needed)
+        var options = {
+          // optionName: 'option value'
+          // for example:
+          index: idx, // start at first slide
+          history: false,
+          shareEl: false,
+        };
+        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        gallery.init();
+      }
+    });
+  </script>
 </BODY>
 
 <!-- Mirrored from www.furano.com.tw/Content_5.htm by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 15 Mar 2011 09:41:42 GMT -->
