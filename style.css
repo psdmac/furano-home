@@ -43,3 +43,34 @@
 .img-wrapper img {
   width: 100%;
 }
+
+.intro-img {
+  width: 50%;
+  padding-top: 50%;
+  float: left;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.intro-img .info {
+  position: absolute;
+  padding: 8px;
+  background-color: #000;
+  color: #f1f1f1;
+  bottom: 0;
+  left: 0;
+}
+
+.intro-wrapper {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.intro-img-wrapper {
+  overflow: hidden;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
